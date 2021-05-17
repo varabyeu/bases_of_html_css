@@ -1,0 +1,16 @@
+.header{
+    text-align: right;
+    font-family: 'Times New Roman';
+}
+.bol{
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    font-style: italic;
+}
+.bottom{
+    text-align: left;
+    font-family: 'Times New Roman';
+}
+.appealto{
+    font-weight: bold;
+}

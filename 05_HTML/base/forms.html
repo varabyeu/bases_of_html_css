@@ -13,11 +13,11 @@
                 <form action="https://fe.it-academy.by/TestForm.php" method="GET">
                     <FIELDSET> 
                         <LEGEND>Строка поиска</LEGEND> 
-                        <input type="text" id="SimpleSearch" name="ASimpleQuestion" maxlength="10"><button>Искать</button>
+                        <input type="text"  name="ASimpleQuestion" maxlength="10"><button>Искать</button>
                         <label>
-                            <input type="radio" name="search_group" value="value_1" id="OnSite"> На сайте
-                            <input type="radio" name="search_group" value="value_1" id="InGoogle"> В google
+                            <input type="radio" name="search_group" value="value_1"> На сайте
                         </label>
+                        <input type="radio" name="search_group" value="value_1"> В google
                         <p align="left"><em>Длина запроса не более 10 символов</em></p>
                     </FIELDSET>
                 </form></TH>
@@ -28,8 +28,8 @@
                     <LEGEND>Строка поиска</LEGEND> 
                     <input type="text" id="NotSimpleSearch" name="NotASimpleQuestion" autofocus required>*<button>Искать</button> 
                     <label>
-                        <input type="radio" name="search_group" value="value_1" id="OnSite"> На сайте
-                        <input type="radio" name="search_group" value="value_1" id="InGoogle"> В google
+                        <input type="radio" name="search_group" value="value_1"> На сайте
+                        <input type="radio" name="search_group" value="value_1"> В google
                     </label>
                     <p align="left">* - обязательное поле</em><br>
                     Автофокус в поле поиска</p>
@@ -42,8 +42,8 @@
                 <form action="https://fe.it-academy.by/TestForm.php" method="GET">
                     <FIELDSET> 
                         <LEGEND>Авторизируйтесь</LEGEND> 
-                        <p align="left"><input type="text" id="SimpleAutorizationLogin" name="ASimpleAutorizationLogin" required>* Логин<br>
-                        <input type="password" id="SimpleAutorizationPass" name="ASimpleAutorizationPass" required>* Пароль <br>
+                        <p align="left"><input type="text" name="ASimpleAutorizationLogin" required>* Логин<br>
+                        <input type="password" name="ASimpleAutorizationPass" required>* Пароль <br>
                         <input type="checkbox" name="checking">Оставаться в системе<br>
                         <button>Войти</button><br><em>* - обязательное поле</em></p>
                     </FIELDSET>
@@ -53,15 +53,12 @@
                     <form action="https://fe.it-academy.by/TestForm.php" method="post">
                         <FIELDSET> 
                             <LEGEND>Как вам?</LEGEND> 
-                            <label>
-                                <p align="left"><input type="radio" name="search_group" value="not_good" id="OnSite"> ничего <br>
-                                <input type="radio" name="search_group" value="not_bad" id="InGoogle"> неплохо<br>
-                                <input type="radio" name="search_group" value="good" id="InGoogle"> хорошо<br>
-                                <input type="radio" name="search_group" value="omg" id="InGoogle"> супер<br>
+                                <p align="left"><input type="radio" name="search_group" value="not_good"> ничего <br>
+                                <input type="radio" name="search_group" value="not_bad"> неплохо<br>
+                                <input type="radio" name="search_group" value="good"> хорошо<br>
+                                <input type="radio" name="search_group" value="omg"> супер<br>
                                 <input type="hidden" name=date_voite value="2013.12.31">
                                 <input type="submit" value="Отправить"></p>
-
-                            </label>
                         </FIELDSET>
                     </form></TH>
         </TR>
@@ -71,8 +68,8 @@
                 <form action="https://fe.it-academy.by/TestForm.php" method="post">
                     <FIELDSET> 
                         <LEGEND>Оставьте ваш отзыв</LEGEND> 
-                        <p align="left"><input type="text" id="SimpleAutorizationLogin" name="ASimpleAutorizationLogin" required>* Имя<br>
-                        <input type="email" id="SimpleAutorizationPass" name="ASimpleAutorizationPass" required>* e-mail <br>
+                        <p align="left"><input type="text" name="ASimpleAutorizationLogin" required>* Имя<br>
+                        <input type="email" name="ASimpleAutorizationPass" required>* e-mail <br>
                         <textarea name="SendForm" lang="ru">Форма отправки</textarea><br>
                         <button>Войти</button><br><em>* - обязательное поле</em></p>
                     </FIELDSET>
@@ -106,7 +103,7 @@
                         <LEGEND>Upload</LEGEND> 
                         <p align="left">Файл:<br>
                         <input type="file" name="file_Field" dir=“ltr”><br>Срок хранения (года):<br>
-                        <input type="number" id="years" name="NumberYears" maxlength="10"><input type="submit" value="Загрузить">
+                        <input type="number" name="NumberYears" maxlength="10"><input type="submit" value="Загрузить">
                     </FIELDSET>
                 </form></TH>
                 <TH>
