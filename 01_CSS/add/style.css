@@ -1,15 +1,16 @@
+
 .header{
     text-align: right;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', sans-serif;
 }
 .bol{
     text-align: left;
-    font-family: 'Caveat', cursive;
+    font-family: 'Bad+Script', cursive;
     font-style: italic;
 }
 .bottom{
     text-align: left;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', sans-serif;
 }
 .appealto{
     font-weight: bold;
