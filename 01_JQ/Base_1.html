@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+    .true{
+        color: green;
+    }
+</style>
+<body>
+    <form method="post" name="form" action="">
+
+        <div>Введите пароль:</div>
+        <input type="text" class="password">
+        
+        <div>Подтвердите пароль:</div>
+        <input type="text" class="cor_password">
+        
+        <div class="error"></div>
+        <div class="true"></div>
+    
+        <input type="submit" value="submit" id="submit">
+    
+    </form>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    
+    
+    <script>
+
+        $(".cor_password").on("keyup", function() { 
+        
+            var value_input1 = $(".password").val(); 
+            var value_input2 = $(this).val(); 
+            
+            if(value_input1 != value_input2) { 
+            
+                $(".error").html("Пароли не совпадают!");
+                $("#submit").attr("disabled", "disabled"); 
+                $(".true").html(""); 
+            } else { 
+            
+                $("#submit").removeAttr("disabled");  
+                $(".error").html("");
+                $(".true").html("Пароли совпадают!");  
+                
+            }
+            
+        });
+    
+    </script>
+</body>
+</html>
